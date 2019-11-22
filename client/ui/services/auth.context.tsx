@@ -16,7 +16,7 @@ class AuthProvider extends Component {
 		// this causes the user info to only be retrieved when the component is
 		// mounted, so there's a slight delay with the info showing
 		this.setState({
-			isLoggedIn: JSON.parse(localStorage.getItem('isLoggedIn') || ''),
+			isLoggedIn: JSON.parse(localStorage.getItem('isLoggedIn')),
 			email: localStorage.getItem('email')
 		});
 	}
